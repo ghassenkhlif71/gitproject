@@ -7,9 +7,10 @@ public class Controller : MonoBehaviour {
     Touch mytTouch;
     Vector2 a;
     // Update is called once per frame
-    
 
-    void Update () {
+
+    void Update()
+    {
 
         Debug.Log(Screen.width);
         if (Input.touchCount > 0)
@@ -21,17 +22,13 @@ public class Controller : MonoBehaviour {
 
             if (a.x > Screen.width / 2)
             {
-                transform.position +=new  Vector3(0.2f, 0,0);
+                transform.position += new Vector3(0.2f, 0, 0);
             }
             if (a.x < Screen.width / 2)
 
             {
-                transform.position += new Vector3(-0.2f, 0,0);
+                transform.position += new Vector3(-0.2f, 0, 0);
             }
-        }
-        else
-        {
-            transform.position = new Vector2(0,0);
         }
     }
 }
